@@ -3,6 +3,9 @@
 
 var Calcolatrice = function(){
 
+
+    var self = this;
+
     // per il DOM
     var doc = document;
     
@@ -10,19 +13,19 @@ var Calcolatrice = function(){
 
         // TODO: finire di definire tutti i metodi del calcolatore qui dentro 
         // click sul numero 7
-        clickOn7 : function(){
+        self.clickOn7 : function(){
             doc.getElementById('btn7').onclick = function(){
                 console.log("Cliccato 7");
             }
         },
         //click sul numero 8
-        clickOn8 : function(){
+        self.clickOn8 : function(){
             doc.getElementById('btn8').onclick = function(){
                 console.log("Cliccato 8");
             }
         },
         // click sul numero 9
-        clickOn9 : function(){
+        self.clickOn9 : function(){
             doc.getElementById('btn9').onclick = function(){
                 console.log("Cliccato 9");
             }
