@@ -1,5 +1,0 @@
-<?php
-
-/// bla bla bla
-
-?>

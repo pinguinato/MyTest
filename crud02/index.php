@@ -15,8 +15,6 @@
     <meta charset="utf-8">
     <link   href="css/bootstrap.min.css" rel="stylesheet">
     <link   href="css/bootstrap-theme.min.css" rel="stylesheet">
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
 </head>
 <body>
 <div id="container">
@@ -45,6 +43,8 @@
         </div>
     </div>
 </div>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
 <?php
