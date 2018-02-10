@@ -2,20 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d520779d-d2aa-4cb6-8db5-777444bcdb49" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/crud02/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/crud02/connection.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/crud02/css/bootstrap-theme.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/crud02/css/bootstrap.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/crud02/fonts/glyphicons-halflings-regular.eot" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/crud02/fonts/glyphicons-halflings-regular.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/crud02/fonts/glyphicons-halflings-regular.ttf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/crud02/fonts/glyphicons-halflings-regular.woff" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/crud02/fonts/glyphicons-halflings-regular.woff2" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/crud02/index.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/crud02/js/bootstrap.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/crud02/js/jquery.js" />
-      <change beforePath="$PROJECT_DIR$/calcolatoreJS/CalculatorLibrary.js" afterPath="$PROJECT_DIR$/calcolatoreJS/CalculatorLibrary.js" />
+      <change beforePath="$PROJECT_DIR$/crud02/MioFile.txt" afterPath="$PROJECT_DIR$/crud02/MioFile.txt" />
+      <change beforePath="$PROJECT_DIR$/crud02/index.php" afterPath="$PROJECT_DIR$/crud02/index.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,22 +14,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/crud02/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="23" column="14" lean-forward="true" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+            <state relative-caret-position="171">
+              <caret line="24" column="30" lean-forward="true" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MioFile.txt" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MioFile.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/crud02/MioFile.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="20" lean-forward="false" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+            <state relative-caret-position="68">
+              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/crud01/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="129">
+              <caret line="15" column="6" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="15" selection-end-column="6" />
+              <folding>
+                <marker date="1512822493162" expanded="true" signature="1148:1188" ph="SELECT * FRO... customers" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -55,8 +55,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/crud02/connection.php" />
-        <option value="$PROJECT_DIR$/crud02/MioFile.txt" />
         <option value="$PROJECT_DIR$/crud02/index.php" />
+        <option value="$PROJECT_DIR$/crud02/MioFile.txt" />
       </list>
     </option>
   </component>
@@ -156,12 +156,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1518277974819</updated>
-      <workItem from="1518277976018" duration="2137000" />
+      <workItem from="1518277976018" duration="2677000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2137000" />
+    <option name="totallyTimeSpent" value="2677000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="10" y="16" width="1327" height="780" extended-state="6" />
@@ -214,16 +214,6 @@
           <folding>
             <marker date="1512822493162" expanded="true" signature="926:991" ph="UPDATE customers... " />
             <marker date="1512822493162" expanded="true" signature="1248:1284" ph="SELECT * FRO... customers" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crud01/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="6" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="15" selection-end-column="6" />
-          <folding>
-            <marker date="1512822493162" expanded="true" signature="1148:1188" ph="SELECT * FRO... customers" />
           </folding>
         </state>
       </provider>
@@ -301,18 +291,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/crud02/MioFile.txt">
+    <entry file="file://$PROJECT_DIR$/crud01/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="20" lean-forward="false" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-          <folding />
+        <state relative-caret-position="129">
+          <caret line="15" column="6" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="15" selection-end-column="6" />
+          <folding>
+            <marker date="1512822493162" expanded="true" signature="1148:1188" ph="SELECT * FRO... customers" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/crud02/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="23" column="14" lean-forward="true" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+        <state relative-caret-position="171">
+          <caret line="24" column="30" lean-forward="true" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crud02/MioFile.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding />
         </state>
       </provider>

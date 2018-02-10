@@ -5,6 +5,8 @@
     // aggancio del file in modalità sola lettura
     $file_handle = fopen($nome_del_file_da_leggere, "r");
 
+    $file_line = '';
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -20,7 +22,7 @@
 <div id="container">
     <div class="col-md-12 col-md-offset-0">
         <div class="row">
-           <h3>Test lettura task da file</h3>
+           <h3>Elenco dei TASK</h3>
         </div>
     </div>
     <div class="col-md-12 col-md-offset-0">
@@ -28,10 +30,17 @@
         <?php
 
         //legge riga per riga il file
+
         while (!feof($file_handle)) {
-            $line = fgets($file_handle);
-            echo $line;
-        }
+            // salva il contenuto testuale in una stringa
+            $file_line = fgets($file_handle);
+
+        ?>
+        <p>
+            <?php  print($file_line); ?>
+        </p>
+        <?php
+         } // fine while
         ?>
         </div>
     </div>
