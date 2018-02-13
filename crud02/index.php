@@ -1,31 +1,26 @@
 <?php
+    require_once('task.php');
     require_once('functions.php');
     // il file dove io metto le voci da leggere
     $nome_del_file_da_leggere = "MioFile.txt";
-    $file_handle = fopen($nome_del_file_da_leggere, "a") or die('Non posso aprire il file '.$nome_del_file_da_leggere);
-    $file_line = '';
-
-    // dati che arrivano dal form
-
     $testo_task = '';
-    if(isset($_POST['testo-task'])){
-        $testo_task = verificaTestoTask($_POST['testo-task']);
+    
+    //var_dump($_POST['testo-task']); die;
+
+
+    if( isset($_POST['testo-task']) && $_POST['testo-task'] != null && $_POST['testo-task'] != '' ){
+        $file_handle = fopen($nome_del_file_da_leggere, "a") or die('Non posso aprire il file '.$nome_del_file_da_leggere);
+        $testo_task = new Task(verificaTestoTask($_POST['testo-task']));
+        $file_handle = file_put_contents($nome_del_file_da_leggere,$testo_task->get_task().PHP_EOL,FILE_APPEND | LOCK_EX);
+        if (is_resource($file_handle)){
+            fclose($file_handle);
+        }
+        
     }
-    //var_dump($testo_task);
 
-    // aggiungi la nuova riga con il task dentro il file di testo
-
-//file_put_contents('logs.txt', $txt.PHP_EOL , FILE_APPEND | LOCK_EX);
-//    $scrivi = fwrite($file_handle,$testo_task."\n");
-
-    $file_handle = file_put_contents($nome_del_file_da_leggere,$testo_task.PHP_EOL,FILE_APPEND | LOCK_EX);
-
-//    var_dump($scrivi);
-
-// chiude file
-    fclose($file_handle);
-
-
+    // vado a leggere sul file
+    $file_handle_reader = fopen($nome_del_file_da_leggere,'r');
+    $file_line = '';
 ?>
 <!DOCTYPE html>
 <html>
@@ -71,20 +66,15 @@
 
         <div class="row">
             <div class="col-lg-12" >
-        <?php
-
-        //legge riga per riga il file
-
-//        while (!feof($file_handle)) {
-//            // salva il contenuto testuale in una stringa
-//            $file_line = fgets($file_handle);
-
+        <?php while (!feof($file_handle_reader)) {
+            // salva il contenuto testuale in una stringa
+            $file_line = fgets($file_handle_reader);
         ?>
         <p>
-            <?php // print($file_line); ?>
+            <?php  print($file_line); ?>
         </p>
         <?php
-//         } // fine while
+         }
         ?>
             </div><!-- chiusura di col-lg-12 -->
         </div><!-- chiusura della row -->
@@ -98,5 +88,7 @@
 </html>
 <?php
 // chiude file
-//fclose($file_handle);
+if(is_resource($file_handle_reader)){
+    fclose($file_handle_reader);
+}
 ?>
