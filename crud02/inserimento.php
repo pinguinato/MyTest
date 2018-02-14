@@ -41,7 +41,7 @@
                     <div class="panel-footer">
                         <a href="index.php" class="btn btn-default"><i class="glyphicon glyphicon-home"></i> HOME</a>
                         <a href="inserimento.php" class="btn btn-primary"><i class="glyphicon glyphicon-pencil"></i> Nuovo Task</a>
-                        <a href="inserimento.php" class="btn btn-danger"><i class="glyphicon glyphicon-trash"></i> Cancella lista task</a>
+                        <a href="inserimento.php" class="btn btn-danger" id="clearAllButton"><i class="glyphicon glyphicon-trash"></i> Cancella lista task</a>
                     </div>
                 </div>
             </div>
@@ -70,5 +70,6 @@
 </div>
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/scripts.js"></script>
 </body>
 </html>

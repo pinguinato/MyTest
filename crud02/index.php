@@ -4,7 +4,7 @@
     // il file dove io metto le voci da leggere
     $nome_del_file_da_leggere = "MioFile.txt";
     $testo_task = '';
-    
+
     //var_dump($_POST['testo-task']); die;
 
 
@@ -15,7 +15,7 @@
         if (is_resource($file_handle)){
             fclose($file_handle);
         }
-        
+
     }
 
     // vado a leggere sul file
@@ -58,7 +58,7 @@
                         <div class="panel-footer">
                             <a href="index.php" class="btn btn-default"><i class="glyphicon glyphicon-home"></i> HOME</a>
                             <a href="inserimento.php" class="btn btn-primary"><i class="glyphicon glyphicon-pencil"></i> Nuovo Task</a>
-                            <a href="inserimento.php" class="btn btn-danger"><i class="glyphicon glyphicon-trash"></i> Cancella lista task</a>
+                            <a href="#" class="btn btn-danger" id="clearAllButton"><i class="glyphicon glyphicon-trash"></i> Cancella lista task</a>
                         </div>
                     </div>
                 </div>
@@ -78,12 +78,18 @@
         ?>
             </div><!-- chiusura di col-lg-12 -->
         </div><!-- chiusura della row -->
-
     </div><!-- chiusura div col-md-12 -->
+
+    <div class="col-md-12 col-md-offset-0">
+      <div class="row">
+        <div id="testoRispostaAjax"></div>
+      </div>
+    </div>
 
 </div><!-- chiusura container -->
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/scripts.js"></script>
 </body>
 </html>
 <?php
